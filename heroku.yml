@@ -1,0 +1,15 @@
+setup:
+ addons:
+   - plan: heroku-postgresql
+
+build:
+  docker:
+    web: Dockerfile
+
+run:
+  web: gunicorn --workers 5 --log-level info --timeout 300 --bind 0.0.0.0:$PORT project_name.wsgi:application
+
+release:
+  image: web
+  command:
+    - ./scripts/command-prod.sh

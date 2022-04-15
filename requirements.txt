@@ -1,0 +1,31 @@
+# Last update: Upgrade Django package
+
+# Allows you to utilize the 12factor inspired DATABASE_URL environment variable
+dj-database-url==0.5.0
+
+# Python WEB framework
+Django==3.2.13
+
+# Allows in-browser requests to your Django application from other origins
+django-cors-headers==3.10.1
+
+# A configurable set of panels that display various debug information about the current request/response
+django-debug-toolbar==3.2.4
+
+# A jazzy skin for the Django admin interface
+django-grappelli==2.15.5
+
+# Collection of custom storage backends for Django
+django-storages==1.12.3
+
+# REST Framework
+djangorestframework==3.13.1
+
+# Automated generation of real Swagger/OpenAPI 2.0 schemas from Django Rest Framework code
+drf-yasg==1.20.0
+
+# Python WSGI HTTP Server
+gunicorn==20.1.0
+
+# PostgreSQL python client
+psycopg2==2.9.3
